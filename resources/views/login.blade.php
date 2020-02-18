@@ -16,7 +16,7 @@
                 登入帳號(電子信箱):<br>
                 <input type="text" name="email"><br>
                 登入密碼:<br>
-                <input type="text" name="password"><br><br>
+                <input type="password" name="password"><br><br>
                 <input type="submit" value="註冊" name="submit">
             </fieldset>
         </form>
