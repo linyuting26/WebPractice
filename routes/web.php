@@ -28,3 +28,5 @@ Route::get('/login', function () {
 });
 
 Route::post('/register', 'WebController@register');
+
+Route::get('/login', 'WebController@login');

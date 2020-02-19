@@ -10,14 +10,14 @@
         <title>會員登入</title>
     </head>
     <body>
-        <form method="post" action="login">        
+        <form method="get" action="login">        
             <fieldset>
                 <legend>會員登入</legend>
                 登入帳號(電子信箱):<br>
                 <input type="text" name="email"><br>
                 登入密碼:<br>
                 <input type="password" name="password"><br><br>
-                <input type="submit" value="註冊" name="submit">
+                <input type="submit" value="登入" name="submit">
             </fieldset>
         </form>
     </body>
