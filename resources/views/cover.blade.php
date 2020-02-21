@@ -10,14 +10,8 @@
         <title>首頁</title>
     </head>
     <body>
-        <form action="/login.php" method="get">
-            <input type="button" style="float:right" value="Login" class="btn btn-outline-primary">
-        </form>
-        <form action="/register.php" method="get">
-            <input type="button" style="float:right" value="Register" class="btn btn-outline-primary">
-        </form>
+        <input type="button" onclick="location.href='/login'" style="float:right" value="Login" class="btn btn-outline-primary">        
+        <input type="button" onclick="location.href='/register'" style="float:right" value="Register" class="btn btn-outline-primary">
+        
     </body>
 </html>
-
-{{-- onclick="location.href='login'"
-onclick="location.href='register'" --}}

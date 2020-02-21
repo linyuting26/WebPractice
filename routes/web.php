@@ -29,4 +29,4 @@ Route::get('/login', function () {
 
 Route::post('/register', 'WebController@register');
 
-Route::get('/login', 'WebController@login');
+Route::post('/logincall', 'WebController@login');

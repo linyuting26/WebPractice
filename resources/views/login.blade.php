@@ -10,8 +10,9 @@
         <title>會員登入</title>
     </head>
     <body>
-        <form method="get" action="login">        
+        <form method="post" action="/logincall">        
             <fieldset>
+                {{ csrf_field() }}
                 <legend>會員登入</legend>
                 登入帳號(電子信箱):<br>
                 <input type="text" name="email"><br>
@@ -20,5 +21,12 @@
                 <input type="submit" value="登入" name="submit">
             </fieldset>
         </form>
+        <script>
+            var msg = '{{Session::get('alert')}}';
+            var exist = '{{Session::has('alert')}}';
+            if(exist){
+                alert(msg);
+            }
+        </script>
     </body>
 </html>

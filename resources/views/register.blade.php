@@ -33,5 +33,12 @@
                 <input type="submit" value="註冊" name="submit">
             </fieldset>
         </form>
+        <script>
+            var msg = '{{Session::get('alert')}}';
+            var exist = '{{Session::has('alert')}}';
+            if(exist){
+                alert(msg);
+            }
+        </script>
     </body>
 </html>
